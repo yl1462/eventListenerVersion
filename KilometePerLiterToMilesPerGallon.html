@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Kilometers Per Liter vs. Miles Per Gallon</title>
+</head>
+
+<body>
+  <div class="column1">
+    <menu>
+      <li><a href="index.html">Main Menu</a></li>
+      <li><a href="FahrenheitToCelsius.html">Fahrenheit to Celsius</a></li>
+      <li><a href="FootToMile.html">Foot to Mile</a></li>
+      <li><a href="KilometePerLiterToMilesPerGallon.html">Fuel Economy</a></li>
+      <li><a href="PoundToOunce.html">Pound to Ounce</a></li>
+      <li><a href="USGallonToUSQuart.html">Us Gallon to US Quart</a></li>
+    </menu>
+  </div>
+
+  <div class="column2">
+    <section>
+      <h3>Kilometers Per Liter vs. Miles Per Gallon</h3>
+      <h4>Formula: </h4>
+        
+        <p>kilometers per liter = miles per gallon (US) × 0.425144</p>
+      <div>
+        <p><input id="targetMPG" placeholder="miles per gallon (US)" type="number" oninput="calculateKPL()"></input> × 0.425144 =
+        </p>
+        <p id="resultKPL" style="text-align: right">kilometers per liter</p>
+      </div>
+
+      <p>miles per gallon (US) = kilometers per liter ÷ 0.425144</p>
+      <div>
+        <p><input id="targetKPL" placeholder="kilometers per liter" type="number" oninput="calculateMPG()"></input> ÷ 0.425144 = 
+        </p>
+        <p id="resultMPG" style="text-align: right">miles per gallon (US)</p>
+      </div>
+
+      <h4>History: </h4>
+      <p>Miles Per Gallon (US)</p>
+      Miles per gallon is the distance traveled in miles consuming just one gallon of fuel.</p>
+
+      <p>When evaluating fuel efficiency, the more miles per gallon, the more fuel efficient a vehicle is and the less
+        fuel consumed. Thus, the lower the mpg rating of a vehicle the less fuel it will consume.</p>
+
+      <p>Miles per gallon (US) can be abbreviated as mpg (US), and are also sometimes abbreviated as mpg. For example, 1
+        mile per gallon (US) can be written as 1 mpg (US) or 1 mpg.</p><br/>
+
+      <p>Kilometers Per Liter</p>
+      <p>Kilometers per liter is the distance that can be traveled in kilometers using one liter of fuel.</p>
+
+      <p>Kilometers per liter can be abbreviated as km/L, and are also sometimes abbreviated as kpl or kmpl. For
+        example, 1 kilometer per liter can be written as 1 km/L, 1 kpl, or 1 kmpl.</p>
+
+      <p>In formal expressions, the slash, or solidus (/), is used to separate units used to indicate division in an
+        expression.</p>
+    </section>
+  </div>
+  <script src="KilometePerLiterToMilesPerGallon.js"></script>
+</body>
+
+</html>

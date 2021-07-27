@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Fahrenheit vs. Celsius</title>
+</head>
+
+<body>
+  <div class="column1">
+    <menu>
+      <li><a href="index.html">Main Menu</a></li>
+      <li><a href="FahrenheitToCelsius.html">Fahrenheit to Celsius</a></li>
+      <li><a href="FootToMile.html">Foot to Mile</a></li>
+      <li><a href="KilometePerLiterToMilesPerGallon.html">Fuel Economy</a></li>
+      <li><a href="PoundToOunce.html">Pound to Ounce</a></li>
+      <li><a href="USGallonToUSQuart.html">Us Gallon to US Quart</a></li>
+    </menu>
+  </div>
+
+  <div class="column2">
+    <section>
+      <h3>Fahrenheit vs. Celsius</h3>
+      <h4>Formula: </h4>
+      <p>(°F − 32) × 5 ÷ 9 = °C</p>
+      <div>
+        <p>(<input id="targetF" placeholder="Fahrenheit" type="number" oninput="calculateC()"></input>
+          °F - 32) x 5 ÷ 9 =
+        </p>
+        <p id="resultC" style="text-align: right">°C</p>
+      </div>
+
+      <p>(°C x 1.8) + 32 = °F</p>
+      <div>
+        <p>(<input id="targetC" placeholder="Celsius" type="number" oninput="calculateF()"></input>
+          °C x 1.8) + 32 = 
+        </p>
+        <p id="resultF" style="text-align: right">°F</p>
+      </div>
+
+      <h4>History:</h4>
+      <p>At face value, measuring the temperature using Celsius instead of Fahrenheit seems to make a lot of face
+        sense. After all, the freezing point of water is a perfect 0 degrees Celsius — not the inexplicable 32 degrees
+        in Fahrenheit. Also, the boiling point of water in Celsius is right at 100 degrees (Okay, 99.98, but what’s a
+        couple hundredths of a degree among friends?) — instead of the awkward 212 degrees Fahrenheit.</p>
+    </section>
+  </div>
+  <script src="FahrenheitToCelsius.js"></script>
+</body>
+
+</html>

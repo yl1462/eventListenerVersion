@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Foot vs. Mile</title>
+</head>
+
+<body>
+  <div class="column1">
+    <menu>
+      <li><a href="index.html">Main Menu</a></li>
+      <li><a href="FahrenheitToCelsius.html">Fahrenheit to Celsius</a></li>
+      <li><a href="FootToMile.html">Foot to Mile</a></li>
+      <li><a href="KilometePerLiterToMilesPerGallon.html">Fuel Economy</a></li>
+      <li><a href="PoundToOunce.html">Pound to Ounce</a></li>
+      <li><a href="USGallonToUSQuart.html">Us Gallon to US Quart</a></li>
+    </menu>
+  </div>
+
+  <div class="column2">
+    <section>
+      <h3>Foot vs. Mile</h3>
+
+      <h4>Formula: </h4>
+
+      <p>miles = feet ÷ 5,280</p>
+      <div>
+        <p><input id="targetF" placeholder="Foot/Feet" type="number" oninput="calculateM()"></input> ÷ 5,280 =
+        </p>
+        <p id="resultM" style="text-align: right">miles(s)</p>
+      </div>
+
+      <p>feet = miles X 5,280</p>
+      <div>
+        <p><input id="targetM" placeholder="Mile(s)" type="number" oninput="calculateF()"></input> X 5,280 = 
+        </p>
+        <p id="resultF" style="text-align: right">foot/feet</p>
+      </div>
+
+      <h4>History:</h4>
+      <p>The mile, sometimes the international mile or statute mile to distinguish it from other miles, is a
+        British imperial unit and US customary unit of distance; both are based on the older English unit of length
+        equal to 5,280 English feet, or 1,760 yards. The statute mile was standardised between the British Commonwealth
+        and the United States by the international agreement in 1959, when it was formally redefined with respect to SI
+        units as exactly 1,609.344 metres.
+      </p>
+      <p>
+        Originally both the Greeks and the Romans subdivided the foot into 16 digits, but in later years, the Romans
+        also subdivided the foot into 12 unciae (from which both the English words "inch" and "ounce" are derived).
+      </p>
+    </section>
+  </div>
+  <script src="FootToMile.js"></script>
+</body>
+
+</html>

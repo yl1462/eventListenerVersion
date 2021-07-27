@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>US Gallon vs. US Quart</title>
+</head>
+
+<body>
+  <div class="column1">
+    <menu>
+      <li><a href="index.html">Main Menu</a></li>
+      <li><a href="FahrenheitToCelsius.html">Fahrenheit to Celsius</a></li>
+      <li><a href="FootToMile.html">Foot to Mile</a></li>
+      <li><a href="KilometePerLiterToMilesPerGallon.html">Fuel Economy</a></li>
+      <li><a href="PoundToOunce.html">Pound to Ounce</a></li>
+      <li><a href="USGallonToUSQuart.html">Us Gallon to US Quart</a></li>
+    </menu>
+  </div>
+
+  <div class="column2">
+    <section>
+      <h3>US Gallon vs. US Quart</h3>
+      <h4>Formula: </h4>
+      <p>quarts = gallons × 4</p>
+      <div>
+        <p><input id="targetG" placeholder="gallon(s)" type="number" oninput="calculateQ()"></input> gallons × 4 =
+        </p>
+        <p id="resultQ" style="text-align: right">quart(s)</p>
+      </div>
+
+      <p>gallons = quarts ÷ 4</p>
+      <div>
+        <p><input id="targetQ" placeholder="quart(s)" type="number" oninput="calculateG()"></input> quarts ÷ 4 =
+        </p>
+        <p id="resultG" style="text-align: right">gallon(s)</p>
+      </div>
+      <h4>History:</h4>
+      <p>
+        Gallons</p>
+      <p>The US liquid gallon is a unit of fluid volume equal to four quarts, eight pints, or sixteen cups. The US
+        liquid gallon should not be confused with the US dry gallon or the imperial gallon, which are different units of
+        measure.</p>
+
+      <p>The gallon is a US customary unit of volume. Gallons can be abbreviated as gal; for example, 1 gallon can be
+        written as 1 gal.</p><br/>
+
+      <p>Quarts</p>
+      <p>The US liquid quart is a unit of fluid volume equal to one fourth of a gallon, two pints, or four cups. The
+        liquid quart should not be confused with the dry quart (US) or the imperial quart, which are different units.
+      </p>
+
+      <p>The quart is a US customary unit of volume. Quarts can be abbreviated as qt; for example, 1 quart can be
+        written as 1 qt.
+      </p>
+    </section>
+  </div>
+  <script src="USGallonToUSQuart.js"></script>
+</body>
+
+</html>

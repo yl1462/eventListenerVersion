@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Pound vs. Ounce</title>
+</head>
+
+<body>
+  <div class="column1">
+    <menu>
+      <li><a href="index.html">Main Menu</a></li>
+      <li><a href="FahrenheitToCelsius.html">Fahrenheit to Celsius</a></li>
+      <li><a href="FootToMile.html">Foot to Mile</a></li>
+      <li><a href="KilometePerLiterToMilesPerGallon.html">Fuel Economy</a></li>
+      <li><a href="PoundToOunce.html">Pound to Ounce</a></li>
+      <li><a href="USGallonToUSQuart.html">Us Gallon to US Quart</a></li>
+    </menu>
+  </div>
+
+  <div class="column2">
+    <section>
+      <h3>Pound vs. Ounce</h3>
+      <h4>Formula: </h4>
+      <p>ounces = pounds × 16</p>
+      <div>
+        <p><input id="targetP" placeholder="pound(s)" type="number" oninput="calculateO()"></input> pounds × 16 =
+        </p>
+        <p id="resultO" style="text-align: right">ounce(s)</p>
+      </div>
+
+      <p>pounds = ounces ÷ 16</p>
+      <div>
+        <p><input id="targetO" placeholder="Ounce(s)" type="number" oninput="calculateP()"></input> ounces ÷ 16 =
+        </p>
+        <p id="resultP" style="text-align: right">pound(s)</p>
+      </div>
+      <h4>History:</h4>
+      <p>What is a Pound?</p>
+      <p>One pound is defined as a unit of mass/weight equal to 16 ounces, or 0.45359237 kilograms. One pound is equal
+        to 7,000 grains in the avoirdupois or apothecaries' systems.</p>
+
+      <p>The pound is a US customary and imperial unit of weight. A pound is sometimes also referred to as a common
+        ounce. Pounds can be abbreviated as lb, and are also sometimes abbreviated as lbs, lbm, or #. For example, 1
+        pound can be written as 1 lb, 1 lbs, 1 lbm, or 1 #.</p><br />
+
+      <p>What is an Ounce?</p>
+      <p>One ounce is a unit of mass/weight equal to 1/16 of a pound. The common ounce should not be confused with the
+        troy ounce, which is equal to 1/12 of a troy pound.[2]</p>
+
+      <p>The ounce is a US customary and imperial unit of weight. Ounces can be abbreviated as oz; for example, 1 ounce
+        can be written as 1 oz.</p>
+    </section>
+  </div>
+  <script src="PoundToOunce.js"></script>
+</body>
+
+</html>
